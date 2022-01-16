@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "core-js": "^3.20.2",
     "google-map-react": "^2.1.10",
-    "google-maps-draw-shape-lib": "^1.0.11",
+    "google-maps-draw-shape-lib": "^1.0.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
