@@ -1,7 +1,7 @@
 import React, { PureComponent, createRef } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-import MapDrawShapeManager from './MapDrawShape/MapDrawShapeManager';
+import MapDrawShapeManager from 'google-maps-draw-shape-lib';
 import './MapDrawShape.css';
 
 export default class MapDrawShape extends PureComponent {
