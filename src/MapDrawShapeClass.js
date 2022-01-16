@@ -46,7 +46,7 @@ export default class MapDrawShape extends PureComponent {
       drawingMode: false,
       drawFreeHandMode: false,
       shape: []
-    };z
+    };
 
     this.mapDrawShapeManagerRef = createRef();
   }
