@@ -1,5 +1,7 @@
 # Example usage in React of [google-maps-draw-shape-lib](https://github.com/tiagocavaco/google-maps-draw-shape-lib)
 
+See example page [here](https://tiagocavaco.github.io/google-maps-draw-shape-react/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation
