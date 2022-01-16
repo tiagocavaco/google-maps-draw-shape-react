@@ -5,34 +5,34 @@ on:
       - 'main'
 
 jobs:
-  # test:
-  #   name: Test on Node ${{ matrix.node }} and ${{ matrix.os }}
+  test:
+    name: Test on Node ${{ matrix.node }} and ${{ matrix.os }}
 
-  #   runs-on: ${{ matrix.os }}
-  #   strategy:
-  #     matrix:
-  #       node: ['10.x', '12.x', '14.x', '16.x']
-  #       os: [ubuntu-latest, windows-latest, macOS-latest]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node: ['10.x', '12.x', '14.x', '16.x']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
 
-  #   steps:
-  #     - name: Checkout repo
-  #       uses: actions/checkout@v2
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
 
-  #     - name: Use Node ${{ matrix.node }}
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: ${{ matrix.node }}
+      - name: Use Node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
 
-  #     - name: Install deps and build (with cache)
-  #       uses: bahmutov/npm-install@v1
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
 
-  #     - name: Test
-  #       run: yarn test --ci --coverage --maxWorkers=2
+      - name: Test
+        run: yarn test --ci --coverage --maxWorkers=2
 
   deploy:
     name: Deploy page
     
-    # needs: test
+    needs: test
 
     runs-on: ubuntu-latest
     steps:   
