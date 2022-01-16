@@ -38,6 +38,8 @@ jobs:
     steps:   
       - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GHP_TOKEN }}
 
       - name: Use Node 16.x
         uses: actions/setup-node@v1
@@ -61,7 +63,7 @@ jobs:
       - name: Deploy
         run: yarn deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
           
 
 
