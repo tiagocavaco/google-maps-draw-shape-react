@@ -55,7 +55,8 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: build
-          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          committer_name: github-actions[bot]
+          committer_email: github-actions[bot]@users.noreply.github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
