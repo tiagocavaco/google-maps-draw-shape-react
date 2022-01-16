@@ -38,8 +38,6 @@ jobs:
     steps:   
       - name: Checkout repo
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GHP_TOKEN }}
 
       - name: Use Node 16.x
         uses: actions/setup-node@v1
@@ -49,13 +47,13 @@ jobs:
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
-      - name: Configure git user
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-
       - name: Deploy
-        run: yarn deploy
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
 
 
