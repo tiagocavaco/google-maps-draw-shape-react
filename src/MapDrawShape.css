@@ -1,0 +1,94 @@
+.header-container {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.map-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+.controls-container {
+  position: absolute;
+  margin-top: 2rem;
+  right: 0;
+  left: 0;
+  bottom: 5%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-control {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  margin: 0.25rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-control:hover {
+  background-color: rgb(249,250,251);
+}
+
+.btn-control:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn-control:focus-visible {
+  box-shadow: none;
+}
+
+.btn-control:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.btn-initial-point {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  justify-content: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn-delete-point {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  justify-content: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  align-items: center !important;
+  display: inline-flex;
+}
