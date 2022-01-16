@@ -4,6 +4,8 @@
 
 See example page [here](https://tiagocavaco.github.io/google-maps-draw-shape-react/).
 
+## Bootstrap
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation
