@@ -64,6 +64,7 @@ jobs:
         run: yarn deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
+          DEPLOY_TOKEN: ${{ secrets.GHP_TOKEN }}
           
 
 
