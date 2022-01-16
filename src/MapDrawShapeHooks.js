@@ -115,7 +115,7 @@ export default function MapDrawShape(props) {
 
 MapDrawShape.defaultProps = {
   mapBootstrap: {
-    key: '', // Set your google maps api key here
+    key: 'AIzaSyCn8eV4OJCGnktvuqI5DmfXqb-g1xn6LVk', // Set your google maps api key here
     libraries: ['drawing']
   },
   mapOptions: {
