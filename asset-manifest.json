@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/google-maps-draw-shape-react/static/css/main.60a4b0f0.css",
+    "main.js": "/google-maps-draw-shape-react/static/js/main.00ff3dff.js",
+    "static/js/787.fa192a8a.chunk.js": "/google-maps-draw-shape-react/static/js/787.fa192a8a.chunk.js",
+    "index.html": "/google-maps-draw-shape-react/index.html",
+    "main.60a4b0f0.css.map": "/google-maps-draw-shape-react/static/css/main.60a4b0f0.css.map",
+    "main.00ff3dff.js.map": "/google-maps-draw-shape-react/static/js/main.00ff3dff.js.map",
+    "787.fa192a8a.chunk.js.map": "/google-maps-draw-shape-react/static/js/787.fa192a8a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60a4b0f0.css",
+    "static/js/main.00ff3dff.js"
+  ]
+}
